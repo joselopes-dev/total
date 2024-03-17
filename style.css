@@ -1,0 +1,150 @@
+*{
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+ font-family: 'poppins';
+ font-size: 20px;
+ color: #0ae1f0;
+}
+
+.retangulo {
+  text-align: center;
+  color:bisque;
+  padding: 20px;
+  background-color: blue;
+}
+
+.circulo {
+  text-align: center;
+  color:bisque;
+  padding: 20px;
+  background-color: blue;
+  border-radius: 50px;
+}
+
+.losango{
+  text-align: center;
+  color:bisque;
+  padding: 20px;
+  background-color: blue;
+  transform: skew(20deg); 
+}
+
+.losango2{
+  text-align: center;
+  color:bisque;
+  padding: 20px;
+  background-color: blue;
+  transform: skew(20deg); 
+}
+
+.losango3{
+  text-align: center;
+  color:bisque;
+  padding: 20px;
+  background-color: blue;
+  transform: skew(20deg); 
+}
+
+.circulo2 {
+  text-align: center;
+  color:bisque;
+  padding: 10px;
+  background-color: blue;
+  border-radius: 50px;
+ 
+}
+
+.seta {
+  padding: 5px;
+  text-align: center;
+}
+
+
+.seta2 {
+  width: 25px;
+  height: 30px;
+  align-items: center;
+  background-color: blue;
+  margin: 0 auto;
+}
+
+
+body {
+  background-image: url(/fundo-de-grade-de-neon.avif);
+}
+
+.button {
+  background-image: url(/fundo-de-grade-de-neon.avif);
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 20px;
+
+  animation: neon 0.5s ease-in-out infinite alternate;
+}
+
+.botaoo {
+  padding: 10px;
+  gap: 10px; 
+  text-align: center;
+}
+
+.titulo {
+  display: flex;
+  justify-content: center;
+  background-image: url(/fundo-de-grade-de-neon.avif);
+  min-height: 30PX;
+  gap: 20px;
+  padding: 5px;
+  font-size: 30px;
+}
+
+.kanban {
+    display: flex;
+    justify-content: center;
+    min-height: 500PX;
+    gap: 10px;
+    padding: 10px;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+    background-image: url(/fundo-de-grade-de-neon.avif);
+    min-width: 45%;
+    border-radius: 5px;
+    height: 600px;
+  }
+
+.item {
+    padding: 10px;
+    border-radius: 5px;
+    background-size: cover;
+}
+
+.dragging {
+    opacity: 0.5;
+}
+
+.button {
+  transition-duration: 0.4s;
+}
+
+.button:hover {
+  color: #e6f41a;
+}
+
+
+@media (max-width: 500px) {
+.titulo {font-size: 15px;  
+
+    }
+}
+ 
+  @media (max-width: 500px) {  
+  *{ font-size: 10px;
+
+      }
+  }
