@@ -1,10 +1,10 @@
-function onDragStart(event) {
-  event
+function onDragStart(event) {event
     .dataTransfer
     .setData('text/plain', event.target.id);
 }
 
 const columns = document.querySelectorAll(".column");
+
 document.addEventListener("dragstart", (e) => {
     e.target.classList.add("dragging");
 });
@@ -17,14 +17,14 @@ columns.forEach((item) => {
     item.addEventListener("dragover", (e) => {
      const dragging = document.querySelector(".dragging");
      const applyAfter = getNewPosition(item, e.clientY);
+
      if (applyAfter) {
         applyAfter.insertAdjacentElement("afterend", dragging);
      }
      else {
         item.prepend(dragging);
      }
-    });
-
+    }); 
 });
 
 function getNewPosition(column, posY) {
@@ -40,3 +40,4 @@ function getNewPosition(column, posY) {
 
     return result;
 }
+
